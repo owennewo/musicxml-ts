@@ -1,0 +1,11 @@
+<div *ngIf="score">
+    {{score.scorePartwise.movementTitle}}
+
+    <svg height="1400" width="100%" style="border:1px solid red" xmlns="http://www.w3.org/2000/svg">
+        <g [attr.id]="'m' + index" [attr.transform]="calculateMeasureTransform(index, score.scorePartwise.part[0], measure)" mxml-measure
+            *ngFor="let measure of score.scorePartwise.part[0].measure; let index = index" stroke="black" fill="white" stroke-width="1"
+            [measure]="measure"></g>
+    </svg>
+
+
+</div>

@@ -1,0 +1,9 @@
+<a [routerLink]="['/loader']">loader</a>
+<h3>Gallery</h3>
+<nav>
+      <a *ngFor="let section of sections" (click)="selectSection(section)">{{section.name}}</a>
+</nav>
+
+<!--<gallery-section *ngIf="selectedSection" [section]="selectedSection"></gallery-section>-->
+<h3>{{selectedSection?.name}}</h3>
+<musicxml-score></musicxml-score>

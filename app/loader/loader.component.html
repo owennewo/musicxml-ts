@@ -1,0 +1,11 @@
+<a [routerLink]="['/gallery']">gallery</a>
+<h3>Scores</h3>
+<nav>
+      <a *ngFor="let score of scores" (click)="selectScore(score)">{{score}}</a>
+</nav>
+
+<a *ngIf="pictureUri" href="{{pictureUri}}" target="_blank">PNG</a>
+
+<keyboard></keyboard>
+
+<musicxml-score></musicxml-score>

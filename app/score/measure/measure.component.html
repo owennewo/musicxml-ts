@@ -1,0 +1,29 @@
+<ng-container *ngIf="measure">
+
+    <svg:text *ngIf="measureText" x="0" [attr.y]="20">{{measureText}}</svg:text>
+
+    <svg:g [ngClass]="{ 'staff': true, 'selected': measure.selected }">
+        <svg:line *ngFor="let noteCode of staffLines" x1="0" [attr.y1]="noteCodeToYPos(noteCode)" [attr.x2]="width" [attr.y2]="noteCodeToYPos(noteCode)"></svg:line>
+        <svg:line x1="0" x2="0" [attr.y1]="noteCodeToYPos(staffLines[0])" [attr.y2]="noteCodeToYPos(staffLines[4])"></svg:line>
+        <svg:line [attr.x1]="width" [attr.x2]="width" [attr.y1]="noteCodeToYPos(staffLines[0])" [attr.y2]="noteCodeToYPos(staffLines[4])"></svg:line>
+    </svg:g>
+
+
+
+    <ng-container *ngFor="let attribute of measure.attributes; let i = index;">
+        <ng-container *ngIf="attribute.key && attribute.key.length > 0 && attribute.key[0].fifths > 0">
+            <svg:use *ngFor="let note of keySharps | slice:0:attribute.key[0].fifths; let index = index" [attr.x]="index * 10 + 50" [attr.y]="noteCodeToYPos(note)"
+                [attr.xlink:href]="'/notation.svg#accidental-type-sharp'"></svg:use>
+        </ng-container>
+        <ng-container *ngIf="attribute.key && attribute.key.length > 0 && attribute.key[0].fifths < 0">
+            <svg:use *ngFor="let note of keyFlats | slice:0:Math.abs(attribute.key[0].fifths); let index = index" [attr.x]="index * 10 + 50"
+                [attr.y]="noteCodeToYPos(note)" [attr.xlink:href]="'/notation.svg#accidental-type-flat'"></svg:use>
+        </ng-container>
+        <svg:use *ngIf="barSign == 'F'" x="10" [attr.y]="noteCodeToYPos('F3')" [attr.xlink:href]="'/notation.svg#clef-type-f'"></svg:use>
+        <svg:use *ngIf="barSign == 'G'" x="10" [attr.y]="noteCodeToYPos('G4')" [attr.xlink:href]="'/notation.svg#clef-type-g'"></svg:use>
+    </ng-container>
+
+    <svg:g [ngClass]="{ 'note': true, 'selected': note.selected}" *ngFor="let note of measure.note; let index = index" [attr.transform]="getTranslate(index, note)"
+        mxml-note [note]="note" fill="black"></svg:g>
+
+</ng-container>

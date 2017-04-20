@@ -1,0 +1,9 @@
+
+<ng-container *ngIf="note">
+
+    <!--<svg:use *ngIf="note.stem.content == 'up'" [attr.xlink:href]="'/notation.svg#stem-type-up'"></svg:use>
+    <svg:use *ngIf="note.stem.content == 'down'" [attr.xlink:href]="'/notation.svg#stem-type-down'"></svg:use>-->
+
+    <svg:use *ngFor="let svgPart of svgParts" [attr.xlink:href]="svgPart.linkId" [attr.x]="svgPart.x" [attr.y]="svgPart.y" ></svg:use>
+
+</ng-container>

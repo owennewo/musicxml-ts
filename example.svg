@@ -1,0 +1,101 @@
+<svg height="150" width="100%" style="border:1px solid red" xmlns="http://www.w3.org/2000/svg">
+
+
+    <g transform="translate(20,50)">
+        <use href="notation.svg#note-type-16th" />
+        <use href="notation.svg#stem-type-up" />
+        <use href="notation.svg#flag-type-up" />
+        <use y="6" href="notation.svg#flag-type-up" />
+    </g>
+    <g transform="translate(40,50)">
+        <use href="notation.svg#note-type-16th" />
+        <use href="notation.svg#stem-type-down" />
+        <use href="notation.svg#flag-type-down" />
+        <use y="-6" href="notation.svg#flag-type-down" />
+    </g>
+
+    <g transform="translate(60,50)">
+        <use href="notation.svg#note-type-16th" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-up" />
+        <use href="notation.svg#flag-type-up" />
+        <use y="6" href="notation.svg#flag-type-up" />
+    </g>
+    <g transform="translate(80,50)">
+        <use href="notation.svg#note-type-16th" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-down" />
+        <use href="notation.svg#flag-type-down" />
+        <use y="-6" href="notation.svg#flag-type-down" />
+    </g>
+
+    <g transform="translate(100,50)">
+        <use href="notation.svg#note-type-eighth" />
+        <use href="notation.svg#stem-type-up" />
+        <use href="notation.svg#flag-type-up" />
+    </g>
+    <g transform="translate(120,50)">
+        <use href="notation.svg#note-type-eighth" />
+        <use href="notation.svg#stem-type-down" />
+        <use href="notation.svg#flag-type-down" />
+    </g>
+
+    <g transform="translate(140,50)">
+        <use href="notation.svg#note-type-eighth" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-up" />
+        <use href="notation.svg#flag-type-up" />
+    </g>
+    <g transform="translate(160,50)">
+        <use href="notation.svg#note-type-eighth" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-down" />
+        <use href="notation.svg#flag-type-down" />
+    </g>
+
+    <g transform="translate(180,50)">
+        <use href="notation.svg#note-type-quarter" />
+        <use href="notation.svg#stem-type-up" />
+    </g>
+    <g transform="translate(200,50)">
+        <use href="notation.svg#note-type-quarter" />
+        <use href="notation.svg#stem-type-down" />
+    </g>
+    <g transform="translate(220,50)">
+        <use href="notation.svg#note-type-quarter" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-up" />
+    </g>
+    <g transform="translate(240,50)">
+        <use href="notation.svg#note-type-quarter" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-down" />
+    </g>
+    <g transform="translate(260,50)">
+        <use href="notation.svg#note-type-half" />
+        <use href="notation.svg#stem-type-up" />
+    </g>
+    <g transform="translate(280,50)">
+        <use href="notation.svg#note-type-half" />
+        <use href="notation.svg#stem-type-down" />
+    </g>
+
+    <g transform="translate(300,50)">
+        <use href="notation.svg#note-type-half" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-up" />
+    </g>
+    <g transform="translate(320,50)">
+        <use href="notation.svg#note-type-half" />
+        <use href="notation.svg#dot" />
+        <use href="notation.svg#stem-type-down" />
+    </g>
+    <g transform="translate(340,50)">
+        <use href="notation.svg#note-type-whole" />
+    </g>
+    <g transform="translate(360,50)">
+        <use href="notation.svg#note-type-whole" />
+        <use href="notation.svg#dot" />
+    </g>
+
+</svg>
